@@ -3,7 +3,7 @@
 use App\Models\Job;
 require_once('jobs.php');
 
-$name = 'Hector Benítez';
+$name = 'Hector Benitez';
 $limitMonths = 2000;
 
 ?>

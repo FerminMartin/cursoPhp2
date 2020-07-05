@@ -5,6 +5,8 @@
         }
     },
     "require":{
-        "illuminate/database": "^5.4"
+        "illuminate/database": "^5.4",
+        "laminas/laminas-diactoros": "^1.8",
+        "aura/router": "^3.1"
     }
 }

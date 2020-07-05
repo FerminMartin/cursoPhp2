@@ -20,6 +20,15 @@
       ),
       'reference' => NULL,
     ),
+    'aura/router' => 
+    array (
+      'pretty_version' => '3.1.0',
+      'version' => '3.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '52507bc813c92511dbcacc7463f163ef5149ad38',
+    ),
     'doctrine/inflector' => 
     array (
       'pretty_version' => 'v1.1.0',
@@ -74,6 +83,24 @@
       ),
       'reference' => '429be50660ed8a196e0798e5939760f168ec8ce9',
     ),
+    'laminas/laminas-diactoros' => 
+    array (
+      'pretty_version' => '1.8.7p2',
+      'version' => '1.8.7.0-patch2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6991c1af7c8d2c8efee81b22ba97024781824aaa',
+    ),
+    'laminas/laminas-zendframework-bridge' => 
+    array (
+      'pretty_version' => '1.0.4',
+      'version' => '1.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'fcd87520e4943d968557803919523772475e8ea3',
+    ),
     'nesbot/carbon' => 
     array (
       'pretty_version' => '1.39.1',
@@ -91,6 +118,31 @@
       array (
       ),
       'reference' => '0a58ef6e3146256cc3dc7cc393927bcc7d1b72db',
+    ),
+    'psr/http-message' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
+    ),
+    'psr/http-message-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'psr/log' => 
+    array (
+      'pretty_version' => '1.1.3',
+      'version' => '1.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
     ),
     'symfony/polyfill-mbstring' => 
     array (
@@ -115,6 +167,13 @@
       'replaced' => 
       array (
         0 => 'v5.4.36',
+      ),
+    ),
+    'zendframework/zend-diactoros' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '~1.8.7.0',
       ),
     ),
   ),
