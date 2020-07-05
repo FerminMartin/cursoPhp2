@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 require_once '../vendor/autoload.php';
 
 use Illuminate\Database\Capsule\Manager as Capsule;
-// use Aura\Router\RouterContainer;
+use Aura\Router\RouterContainer;
 
 
 $capsule = new Capsule;
@@ -35,22 +35,19 @@ $request = Laminas\Diactoros\ServerRequestFactory::fromGlobals(
     $_FILES
 );
 
-var_dump($request->getUri()->getPath());
+$routerContainer = new RouterContainer();
+$map = $routerContainer->getMap();
+$map->get('index', '/cursophp2/', '../index.php');
+$map->get('addJobs', '/cursophp2/jobs/add', '../addJob.php');
+
+$matcher = $routerContainer->getMatcher();
+$route = $matcher->match($request);
+if (!$route){
+    echo 'No route';
+} else {
+    require $route->handler;
+}
 
 
-// $routerContainer = new RouterContainer();
-// $map = $routerContainer->getMap();
-// $map->get('index', '/', '../index.php');
-// $map->get('addJobs', 'jobs/add', '../addJob.php');
-
-// $matcher = $routerContainer->getMatcher();
-// $route = $matcher->match($request);
-// if (!$route){
-//     echo 'No route';
-// }else{
-//     require $route->handler;
-// }
-
-//var_dump($route->handler);
 
 
