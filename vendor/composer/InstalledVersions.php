@@ -157,6 +157,15 @@ private static $installed = array (
       ),
       'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
     ),
+    'symfony/polyfill-ctype' => 
+    array (
+      'pretty_version' => 'v1.17.1',
+      'version' => '1.17.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d',
+    ),
     'symfony/polyfill-mbstring' => 
     array (
       'pretty_version' => 'v1.17.1',
@@ -181,6 +190,15 @@ private static $installed = array (
       array (
         0 => 'v5.4.36',
       ),
+    ),
+    'twig/twig' => 
+    array (
+      'pretty_version' => 'v1.42.5',
+      'version' => '1.42.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '87b2ea9d8f6fd014d0621ca089bb1b3769ea3f8e',
     ),
     'zendframework/zend-diactoros' => 
     array (
