@@ -80,7 +80,9 @@ if (!$route){
     $actionName = $handlerData['action'];
 
     $controller = new $controllerName;
-    $controller->$actionName($request);
+    $response = $controller->$actionName($request);
+
+    echo $response->getBody();
 }
 
 
