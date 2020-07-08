@@ -157,6 +157,15 @@ private static $installed = array (
       ),
       'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
     ),
+    'respect/validation' => 
+    array (
+      'pretty_version' => '1.1.31',
+      'version' => '1.1.31.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '45d109fc830644fecc1145200d6351ce4f2769d0',
+    ),
     'symfony/polyfill-ctype' => 
     array (
       'pretty_version' => 'v1.17.1',

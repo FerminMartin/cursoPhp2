@@ -41,6 +41,10 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Translation\\' => 30,
         ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -81,6 +85,10 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
         ),
         'Psr\\Log\\' => 
         array (

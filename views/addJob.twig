@@ -1,20 +1,17 @@
-<html>
-    <head>
-        <title>Add Job</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
+{% extends "layout.twig" %}
 
-    </head>
-    <body>
-        <form action="/cursophp2/jobs/add" method="post">
-            <h1>Add Job</h1>
+{% block content %}
+    <h1>Add Job</h1>
+    <div class="alert alert-primary" role="alert">
+        {{ responseMessage }}
+    </div>
+    <form action="/cursophp2/jobs/add" method="post">
             <label for="">Title:</label>
             <input type="text" name="title"><br>
             <label for="">Description:</label>
             <input type="text" name="description"><br>
+            {# <input type="file" name="logo"><br>  #}
             <button type="submit">Save</button>
-        </form>
-    </body>
+    </form>
+{% endblock %}
 
-</html>
