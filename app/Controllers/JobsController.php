@@ -19,6 +19,7 @@ class JobsController extends BaseController{
                 $postData = $request->getParsedBody();
 
                 $files = $request->getUploadedFiles();
+                // var_dump ($files);
                 $logo = $files['logo'];
 
                 if($logo->getError() == UPLOAD_ERR_OK){
@@ -26,10 +27,11 @@ class JobsController extends BaseController{
                     $logo->moveTo("uploads/$fileName");
                 }
 
-                // $job = new Job();
-                // $job->title = $postData['title'];
-                // $job->description = $postData['description'];
-                // $job->save();
+                $job = new Job();
+                $job->title = $postData['title'];
+                $job->description = $postData['description'];
+                $job->image = $logo;
+                $job->save();
 
                 $responseMessage = 'Saved';
             }catch (\Exception $e){
