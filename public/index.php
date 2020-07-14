@@ -57,6 +57,14 @@ $map->post('saveUser', '/cursophp2/users/save', [
     'controller' => 'App\Controllers\UsersController',
     'action' => 'postSaveUser'
 ]);
+$map->get('loginForm', '/cursophp2/login', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'getLogin'
+]);
+$map->post('auth', '/cursophp2/auth', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'postLogin'
+]);
 
 $matcher = $routerContainer->getMatcher();
 $route = $matcher->match($request);
