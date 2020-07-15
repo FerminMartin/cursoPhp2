@@ -16,7 +16,8 @@ class AuthController extends BaseController {
         $user = User::where('email', $postData['email'])->first();
         if($user) {
             if(\password_verify($postData['password'],$user->password)){
-                return new RedirectResponse('/cursophp2');
+                $_SESSION['userId'] = $user->id;
+                return new RedirectResponse('/cursophp2/admin');
             }else{
                 $responseMessage= 'Bad credentials';
             }
@@ -24,5 +25,9 @@ class AuthController extends BaseController {
             $responseMessage= 'Bad credentials';
         }
         return $this->renderHTML('login.twig', ['responseMessage'=> $responseMessage]);
+    }
+    public function getLogout(){
+        unset($_SESSION['userId']);
+        return new RedirectResponse('/cursophp2/login');
     }
 }
