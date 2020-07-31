@@ -2,6 +2,7 @@
 namespace App\Controllers;
 
 use App\Models\User;
+use Laminas\Diactoros\ServerRequest;
 use Respect\Validation\Validator as v;
 use Laminas\Diactoros\Response\RedirectResponse;
 
@@ -10,12 +11,12 @@ class AuthController extends BaseController {
     public function getLogin() {
         return $this->renderHTML('login.twig');
     }
-    public function postLogin($request) {
+    public function postLogin(ServerRequest $request) {
         $postData = $request->getParsedBody();
         $responseMessage = null;
         $user = User::where('email', $postData['email'])->first();
         if($user) {
-            if(\password_verify($postData['password'],$user->password)){
+            if(password_verify($postData['password'],$user->password)){
                 $_SESSION['userId'] = $user->id;
                 return new RedirectResponse('/cursophp2/admin');
             }else{

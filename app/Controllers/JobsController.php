@@ -20,18 +20,18 @@ class JobsController extends BaseController{
                 $postData = $request->getParsedBody();
 
                 $files = $request->getUploadedFiles();
-                $logo = $files['logo'];
+                // $logo = $files['logo'];
 
-                if($logo->getError() == UPLOAD_ERR_OK){
-                    $fileName = $logo->getClientFilename();
-                    $logo->moveTo("uploads/$fileName");
-                }
+                // if($logo->getError() == UPLOAD_ERR_OK){
+                //     $fileName = $logo->getClientFilename();
+                //     $logo->moveTo("uploads/$fileName");
+                //}
 
                 $job = new Job();
                 $job->title = $postData['title'];
                 $job->description = $postData['description'];
                 $job->visible = true;
-                $job->fileName = "uploads/$fileName";
+                //$job->fileName = "uploads/$fileName";
                 $job->save();
 
                 $responseMessage = 'Saved';
