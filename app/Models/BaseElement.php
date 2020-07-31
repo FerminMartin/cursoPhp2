@@ -8,7 +8,6 @@ class BaseElement implements Printable {
     protected $title;
     public $description;
     public $visible = true;
-    public $months;
 
     public function __construct($title, $description){
         $this->setTitle($title);

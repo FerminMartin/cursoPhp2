@@ -32,11 +32,17 @@
           <ul>
             {% for job in jobs %}
               <li class="work-position">
+<<<<<<< HEAD
               <h5>{{ job.title }}</h5>
               <p>{{ job.description }}</p>
                 {% if job.image %}
                   <img src={{"cursophp2/uploads/"~job.image}} alt="image" style="width:120px;"
                 {% endif %}
+=======
+                <h5>{{ job.title }}</h5>
+                <p>{{ job.description }}</p>            
+               <!-- <img src="{{ job.fileName }}" width="120px"> -->
+>>>>>>> 7bbb856
               </li>
             {% endfor %}
           </ul>

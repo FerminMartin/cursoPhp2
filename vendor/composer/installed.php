@@ -119,6 +119,15 @@
       ),
       'reference' => '0a58ef6e3146256cc3dc7cc393927bcc7d1b72db',
     ),
+    'phpoption/phpoption' => 
+    array (
+      'pretty_version' => '1.7.4',
+      'version' => '1.7.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3',
+    ),
     'psr/http-message' => 
     array (
       'pretty_version' => '1.0.1',
@@ -195,6 +204,15 @@
       array (
       ),
       'reference' => '87b2ea9d8f6fd014d0621ca089bb1b3769ea3f8e',
+    ),
+    'vlucas/phpdotenv' => 
+    array (
+      'pretty_version' => 'v4.1.8',
+      'version' => '4.1.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '572af79d913627a9d70374d27a6f5d689a35de32',
     ),
     'zendframework/zend-diactoros' => 
     array (

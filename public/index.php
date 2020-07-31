@@ -6,7 +6,14 @@ error_reporting(E_ALL);
 
 require_once '../vendor/autoload.php';
 
+<<<<<<< HEAD
 password_hash('superSecurePaswd', PASSWORD_DEFAULT);
+=======
+session_start();
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
+>>>>>>> 7bbb856
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Aura\Router\RouterContainer;
@@ -16,10 +23,10 @@ $capsule = new Capsule;
 
 $capsule->addConnection([
     'driver'    => 'mysql',
-    'host'      => 'localhost',
-    'database'  => 'cursophp2',
-    'username'  => 'root',
-    'password'  => '',
+    'host'      => getenv('DB_HOST'),
+    'database'  => getenv('DB_NAME'),
+    'username'  => getenv('DB_USER'),
+    'password'  => getenv('DB_PASS'),
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
@@ -51,6 +58,31 @@ $map->post('saveJobs', '/cursophp2/jobs/add',[
     'controller' => 'App\Controllers\JobsController',
     'action' => 'getAddJobAction'
 ] );
+$map->get('addUser', '/cursophp2/users/add', [
+    'controller' => 'App\Controllers\UsersController',
+    'action' => 'getAddUser'
+]);
+$map->post('saveUser', '/cursophp2/users/save', [
+    'controller' => 'App\Controllers\UsersController',
+    'action' => 'postSaveUser'
+]);
+$map->get('loginForm', '/cursophp2/login', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'getLogin'
+]);
+$map->get('logout', '/cursophp2/logout', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'getLogout'
+]);
+$map->post('auth', '/cursophp2/auth', [
+    'controller' => 'App\Controllers\AuthController',
+    'action' => 'postLogin'
+]);
+$map->get('admin', '/cursophp2/admin', [
+    'controller' => 'App\Controllers\AdminController',
+    'action' => 'getIndex',
+    'auth' => 'true'
+]);
 
 $matcher = $routerContainer->getMatcher();
 $route = $matcher->match($request);
@@ -80,10 +112,24 @@ if (!$route){
     $handlerData = $route->handler;
     $controllerName = $handlerData['controller'];
     $actionName = $handlerData['action'];
+    $needsAuth = $handlerData['auth'] ?? false;
+
+    $sessionUserId = $_SESSION['userId'] ?? null;
+    if ($needsAuth && !$sessionUserId){
+        echo 'Protected route';
+        die;
+    }
 
     $controller = new $controllerName;
     $response = $controller->$actionName($request);
 
+    foreach($response->getHeaders() as $name => $values){
+        foreach($values as $value){
+            header(sprintf('%s: %s', $name, $value), false);
+        }
+    }
+
+    http_response_code($response -> getStatusCode());
     echo $response->getBody();
 }
 
