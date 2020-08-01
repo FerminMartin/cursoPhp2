@@ -12,7 +12,6 @@ class JobsController extends BaseController{
             $postData = $request->getParsedBody();
             $jobValidator = v::key('title', v::stringType()->notEmpty())
             ->key('description', v::stringType()->notEmpty());
-            // ->key('logo', v::stringType()->notEmpty());
 
 
             try{
@@ -20,32 +19,18 @@ class JobsController extends BaseController{
                 $postData = $request->getParsedBody();
 
                 $files = $request->getUploadedFiles();
-<<<<<<< HEAD
-                // var_dump ($files);
                 $logo = $files['logo'];
 
                 if($logo->getError() == UPLOAD_ERR_OK){
                     $fileName = $logo->getClientFilename();
-                    $logo->moveTo("uploads/$fileName");
+                    $fullPath ="../public/uploads/$fileName";
+                    $logo->moveTo($fullPath);
                 }
-=======
-                // $logo = $files['logo'];
-
-                // if($logo->getError() == UPLOAD_ERR_OK){
-                //     $fileName = $logo->getClientFilename();
-                //     $logo->moveTo("uploads/$fileName");
-                //}
->>>>>>> 7bbb856
 
                 $job = new Job();
                 $job->title = $postData['title'];
                 $job->description = $postData['description'];
-<<<<<<< HEAD
-                $job->image = $logo;
-=======
-                $job->visible = true;
-                //$job->fileName = "uploads/$fileName";
->>>>>>> 7bbb856
+                $job->image = $fullPath;
                 $job->save();
 
                 $responseMessage = 'Saved';
