@@ -1,14 +1,15 @@
 <?php
 
-
 ini_set('display_errors', 1);
 ini_set('display_starup_error', 1);
 error_reporting(E_ALL);
 
 require_once '../vendor/autoload.php';
 
+session_start();
 
-
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Aura\Router\RouterContainer;
@@ -26,7 +27,9 @@ $capsule->addConnection([
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',
 ]);
+// Make this Capsule instance available globally via static methods... (optional)
 $capsule->setAsGlobal();
+// Setup the Eloquent ORM... (optional; unless you've used setEventDispatcher())
 $capsule->bootEloquent();
 
 $request = Laminas\Diactoros\ServerRequestFactory::fromGlobals(
@@ -79,12 +82,12 @@ $map->get('admin', '/cursophp2/admin', [
 
 $matcher = $routerContainer->getMatcher();
 $route = $matcher->match($request);
-
+     
 function printElement($job){
     // if($job->visible == false) {
-    //     return;
+    //     return;             
     // }
-
+      
         echo '<li class="work-position">';
         echo '<h5>' .  $job->title . '</h5>';
         echo '<p>' .  $job->description . '</p>';
