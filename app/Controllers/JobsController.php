@@ -3,8 +3,23 @@ namespace App\Controllers;
 
 use App\Models\Job;
 use Respect\Validation\Validator as v;
+use Laminas\Diactoros\Response\RedirectResponse;
+use Laminas\Diactoros\ServerRequest;
 
 class JobsController extends BaseController{
+    public function indexAction(){
+        $jobs = Job::all();
+        return $this->renderHTML('jobs/index.twig', compact('jobs'));
+    }
+
+    public function deleteAction (ServerRequest $request){
+        $params = $request->getQueryParams();
+        $job = Job::find($params['id']);
+        $job->delete();
+
+        return new RedirectResponse ('/cursophp2/jobs');
+    }
+
     public function getAddJobAction($request) {
         $responseMessage = null;
 

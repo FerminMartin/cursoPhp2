@@ -46,9 +46,17 @@ $map->get('index', '/cursophp2/', [
     'controller' => 'App\Controllers\IndexController',
     'action' => 'indexAction'
 ]);
+$map->get('indexJobs', '/cursophp2/jobs',[
+    'controller' => 'App\Controllers\JobsController',
+    'action' => 'indexAction'
+] );
 $map->get('addJobs', '/cursophp2/jobs/add',[
     'controller' => 'App\Controllers\JobsController',
     'action' => 'getAddJobAction'
+] );
+$map->get('deleteJobs', '/cursophp2/jobs/delete',[
+    'controller' => 'App\Controllers\JobsController',
+    'action' => 'deleteAction'
 ] );
 $map->post('saveJobs', '/cursophp2/jobs/add',[
     'controller' => 'App\Controllers\JobsController',
