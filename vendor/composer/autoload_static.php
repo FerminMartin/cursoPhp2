@@ -28,6 +28,7 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         'cc8e14526dc240491e17a838cb78508c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_server.legacy.php',
         '786bf90caabc9e09b6ad4cc5ca8f0e30' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
         '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
+        'bbf73f3db644d3dced353b837903e74c' => __DIR__ . '/..' . '/php-di/php-di/src/DI/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -49,7 +50,9 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
             'PhpOption\\' => 10,
+            'PhpDocReader\\' => 13,
         ),
         'L' => 
         array (
@@ -58,6 +61,8 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         ),
         'I' => 
         array (
+            'Invoker\\' => 8,
+            'Interop\\Container\\' => 18,
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
@@ -66,6 +71,7 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         'D' => 
         array (
             'Dotenv\\' => 7,
+            'DI\\' => 3,
         ),
         'A' => 
         array (
@@ -103,9 +109,17 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Psr\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
         'PhpOption\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
+        'PhpDocReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
         ),
         'Laminas\\ZendFrameworkBridge\\' => 
         array (
@@ -114,6 +128,14 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
+        ),
+        'Invoker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/invoker/src',
+        ),
+        'Interop\\Container\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -134,6 +156,10 @@ class ComposerStaticInitd56e409a0f918cc35e5d298cfeea59e3
         'Dotenv\\' => 
         array (
             0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
+        'DI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-di/php-di/src/DI',
         ),
         'Aura\\Router\\' => 
         array (

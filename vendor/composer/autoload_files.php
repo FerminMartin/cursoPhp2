@@ -27,4 +27,5 @@ return array(
     'cc8e14526dc240491e17a838cb78508c' => $vendorDir . '/laminas/laminas-diactoros/src/functions/normalize_server.legacy.php',
     '786bf90caabc9e09b6ad4cc5ca8f0e30' => $vendorDir . '/laminas/laminas-diactoros/src/functions/normalize_uploaded_files.legacy.php',
     '751a5a3f463e4be759be31748b61737c' => $vendorDir . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
+    'bbf73f3db644d3dced353b837903e74c' => $vendorDir . '/php-di/php-di/src/DI/functions.php',
 );

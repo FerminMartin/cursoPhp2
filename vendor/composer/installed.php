@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'No version set (parsed as 1.0.0)',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '900e9ab831b6590a34110ce1d91c134923c1c211',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'No version set (parsed as 1.0.0)',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '900e9ab831b6590a34110ce1d91c134923c1c211',
     ),
     'aura/router' => 
     array (
@@ -28,6 +28,22 @@
       array (
       ),
       'reference' => '52507bc813c92511dbcacc7463f163ef5149ad38',
+    ),
+    'container-interop/container-interop' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
+    ),
+    'container-interop/container-interop-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '^1.0',
+      ),
     ),
     'doctrine/inflector' => 
     array (
@@ -101,6 +117,13 @@
       ),
       'reference' => 'fcd87520e4943d968557803919523772475e8ea3',
     ),
+    'mnapoli/php-di' => 
+    array (
+      'replaced' => 
+      array (
+        0 => '*',
+      ),
+    ),
     'nesbot/carbon' => 
     array (
       'pretty_version' => '1.39.1',
@@ -119,6 +142,33 @@
       ),
       'reference' => '0a58ef6e3146256cc3dc7cc393927bcc7d1b72db',
     ),
+    'php-di/invoker' => 
+    array (
+      'pretty_version' => '1.3.3',
+      'version' => '1.3.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1f4ca63b9abc66109e53b255e465d0ddb5c2e3f7',
+    ),
+    'php-di/php-di' => 
+    array (
+      'pretty_version' => '5.4.6',
+      'version' => '5.4.6.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3f9255659595f3e289f473778bb6c51aa72abbbd',
+    ),
+    'php-di/phpdoc-reader' => 
+    array (
+      'pretty_version' => '2.1.1',
+      'version' => '2.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '15678f7451c020226807f520efb867ad26fbbfcf',
+    ),
     'phpoption/phpoption' => 
     array (
       'pretty_version' => '1.7.4',
@@ -127,6 +177,22 @@
       array (
       ),
       'reference' => 'b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3',
+    ),
+    'psr/container' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b7ce3b176482dbbc1245ebf52b181af44c2cf55f',
+    ),
+    'psr/container-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '^1.0',
+      ),
     ),
     'psr/http-message' => 
     array (
