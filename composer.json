@@ -11,6 +11,7 @@
         "twig/twig": "^1.42",
         "respect/validation": "^1.1",
         "vlucas/phpdotenv": "^4.1",
-        "php-di/php-di": "^5.4"
+        "php-di/php-di": "^5.4",
+        "robmorgan/phinx": "^0.11.7"
     }
 }

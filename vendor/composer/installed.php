@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '900e9ab831b6590a34110ce1d91c134923c1c211',
+    'reference' => '5b7e431b4f4ea95214ca9e6ef515fe0961d0e3e6',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '900e9ab831b6590a34110ce1d91c134923c1c211',
+      'reference' => '5b7e431b4f4ea95214ca9e6ef515fe0961d0e3e6',
     ),
     'aura/router' => 
     array (
@@ -28,6 +28,69 @@
       array (
       ),
       'reference' => '52507bc813c92511dbcacc7463f163ef5149ad38',
+    ),
+    'cakephp/cache' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e8ec4e77fb288adda318e08053f5f540870aeb9d',
+    ),
+    'cakephp/collection' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ddfff69d7bfa8b9b03eb7150097b0b06258fcaa3',
+    ),
+    'cakephp/core' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '76b9450dc68c81f93bca7827cfbb42a53a5f7737',
+    ),
+    'cakephp/database' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ad2da41e4cfc27321976dec28a081129dc9ae85c',
+    ),
+    'cakephp/datasource' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ef310daf569dc11ef473a9ba0c52429025f672ec',
+    ),
+    'cakephp/log' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '02940591797475c2d384af12432561204d6ecdf9',
+    ),
+    'cakephp/utility' => 
+    array (
+      'pretty_version' => '3.9.1',
+      'version' => '3.9.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '27d9c7409ad89272e2483e3196aabc47385d3db6',
     ),
     'container-interop/container-interop' => 
     array (
@@ -219,6 +282,22 @@
       ),
       'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
     ),
+    'psr/log-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'psr/simple-cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
+    ),
     'respect/validation' => 
     array (
       'pretty_version' => '1.1.31',
@@ -227,6 +306,51 @@
       array (
       ),
       'reference' => '45d109fc830644fecc1145200d6351ce4f2769d0',
+    ),
+    'robmorgan/phinx' => 
+    array (
+      'pretty_version' => '0.11.7',
+      'version' => '0.11.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3cdde73e0c33c410e076108b3e1603fabb5b330d',
+    ),
+    'symfony/config' => 
+    array (
+      'pretty_version' => 'v3.4.43',
+      'version' => '3.4.43.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9e2aa97f0d51f114983666f5aa362426d53e004a',
+    ),
+    'symfony/console' => 
+    array (
+      'pretty_version' => 'v3.4.43',
+      'version' => '3.4.43.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'afc7189694d2c59546cf24ea606a236fa46a966e',
+    ),
+    'symfony/debug' => 
+    array (
+      'pretty_version' => 'v3.4.43',
+      'version' => '3.4.43.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7ce874f4432d8b11cc45a80cc5130a6e2609728d',
+    ),
+    'symfony/filesystem' => 
+    array (
+      'pretty_version' => 'v3.4.43',
+      'version' => '3.4.43.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0f625d0cb1e59c8c4ba61abb170125175218ff10',
     ),
     'symfony/polyfill-ctype' => 
     array (
@@ -254,6 +378,15 @@
       array (
       ),
       'reference' => 'b0cd62ef0ff7ec31b67d78d7fc818e2bda4e844f',
+    ),
+    'symfony/yaml' => 
+    array (
+      'pretty_version' => 'v3.4.43',
+      'version' => '3.4.43.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e7fa05917ae931332a42d65b577ece4d497aad81',
     ),
     'tightenco/collect' => 
     array (
