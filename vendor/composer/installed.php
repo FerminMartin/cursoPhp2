@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5b7e431b4f4ea95214ca9e6ef515fe0961d0e3e6',
+    'reference' => '11a2d6c24c1a3dd560b6a532f153d86e4b920d8f',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5b7e431b4f4ea95214ca9e6ef515fe0961d0e3e6',
+      'reference' => '11a2d6c24c1a3dd560b6a532f153d86e4b920d8f',
     ),
     'aura/router' => 
     array (
