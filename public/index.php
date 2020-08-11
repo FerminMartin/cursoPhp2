@@ -84,8 +84,15 @@ $map->post('auth', '/cursophp2/auth', [
 ]);
 $map->get('admin', '/cursophp2/admin', [
     'controller' => 'App\Controllers\AdminController',
-    'action' => 'getIndex',
-    'auth' => 'true'
+    'action' => 'getIndex'
+    ]);
+$map->get('contactForm', '/cursophp2/contact', [
+    'controller' => 'App\Controllers\ContactController',
+    'action' => 'index'
+]);
+$map->post('contactSend', '/cursophp2/contact/send', [
+    'controller' => 'App\Controllers\ContactController',
+    'action' => 'send'
 ]);
 
 $matcher = $routerContainer->getMatcher();
