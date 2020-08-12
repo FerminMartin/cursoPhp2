@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '11a2d6c24c1a3dd560b6a532f153d86e4b920d8f',
+    'reference' => '254d51119f82cd190c014acb5f94fc0e32169420',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '11a2d6c24c1a3dd560b6a532f153d86e4b920d8f',
+      'reference' => '254d51119f82cd190c014acb5f94fc0e32169420',
     ),
     'aura/router' => 
     array (
@@ -315,6 +315,15 @@
       array (
       ),
       'reference' => '3cdde73e0c33c410e076108b3e1603fabb5b330d',
+    ),
+    'swiftmailer/swiftmailer' => 
+    array (
+      'pretty_version' => 'v5.4.12',
+      'version' => '5.4.12.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '181b89f18a90f8925ef805f950d47a7190e9b950',
     ),
     'symfony/config' => 
     array (
